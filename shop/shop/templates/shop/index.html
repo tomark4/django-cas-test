@@ -6,11 +6,16 @@
     <title>Document</title>
 </head>
 <body>
-    
 
-    <h3>Hola, {{ user.username }}</h3>
-    <p>{{ user.email }}</p>
 
-    
+   {% if request.user.is_authenticated %}
+    <h4>EL usuario esta conectado</h4>
+    <p>Hola, {{ user }}</p>
+    <p><a href="{% url 'logout' %}">Salir</a></p>
+   {% else %}
+    <h4>El usuario esta desconectado</h4>
+    <a href="{% url 'login' %}">Ir a login</a>
+   {% endif %}
+
 </body>
 </html>
