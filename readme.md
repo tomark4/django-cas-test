@@ -16,8 +16,8 @@ Esta app (auth) sera el servicio de autenticación cas
 `python manage.py shell`
 
 #### generar la SECRET_KEY del proyecto
->> from django.core.management.utils import get_random_secret_key
->> get_random_secret_key()
+$ from django.core.management.utils import get_random_secret_key
+$ get_random_secret_key()
 
 copiar la key en el archivo .env
 
