@@ -13,8 +13,6 @@
 
 `cd auth && cp .env.example .env && pip install -r requirements.txt`
 
-`python manage.py shell`
-
 #### generar la SECRET_KEY del proyecto
 `python manage.py shell`
 
